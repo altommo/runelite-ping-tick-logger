@@ -29,15 +29,6 @@ try {
     exit 1
 }
 
-# Check Git
-try {
-    $gitVersion = git --version
-    Write-Host "✅ Git: $gitVersion" -ForegroundColor Green
-} catch {
-    Write-Host "❌ Git not found. Please install Git" -ForegroundColor Red
-    exit 1
-}
-
 Write-Host ""
 
 # Navigate to project directory
@@ -51,7 +42,7 @@ Write-Host ""
 # Show custom plugins
 $pluginsDir = "runelite-client\src\main\java\net\runelite\client\plugins"
 $customPlugins = Get-ChildItem $pluginsDir -Directory | Where-Object { 
-    $_.Name -notmatch '^[a-z]+$' -or $_.Name -eq 'pinglogger' 
+    $_.Name -eq 'pinglogger' 
 } | Select-Object -ExpandProperty Name
 
 if ($customPlugins) {
@@ -75,7 +66,6 @@ try {
 # Build with parallel compilation
 Write-Host ""
 Write-Host "🔨 Building RuneLite (this may take 2-5 minutes)..." -ForegroundColor Yellow
-Write-Host "Using parallel compilation for faster builds..." -ForegroundColor Gray
 
 $buildStart = Get-Date
 
@@ -112,7 +102,6 @@ if ($jarFiles) {
 } else {
     Write-Host ""
     Write-Host "⚠️  Warning: No shaded JAR found in $clientTarget" -ForegroundColor Yellow
-    Write-Host "Build may have completed but JAR creation failed." -ForegroundColor Yellow
     
     # Show available JARs
     $allJars = Get-ChildItem "$clientTarget\*.jar" -ErrorAction SilentlyContinue
