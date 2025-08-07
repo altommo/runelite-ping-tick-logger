@@ -80,11 +80,17 @@ public class PingLoggerPlugin extends Plugin
     private void loadWorlds()
     {
         try {
-            worlds = worldService.getWorlds();
-            if (worlds != null && !worlds.isEmpty()) {
-                log.info("Loaded {} worlds from WorldService", worlds.size());
+            // WorldService.getWorlds() returns WorldResult, need to get the worlds list from it
+            var worldResult = worldService.getWorlds();
+            if (worldResult != null) {
+                worlds = worldResult.getWorlds();
+                if (worlds != null && !worlds.isEmpty()) {
+                    log.info("Loaded {} worlds from WorldService", worlds.size());
+                } else {
+                    log.info("WorldService returned no worlds, will try again later");
+                }
             } else {
-                log.info("WorldService returned no worlds, will try again later");
+                log.info("WorldService returned null result, will try again later");
             }
         } catch (Exception e) {
             log.info("Could not load worlds from WorldService: {}", e.getMessage());
