@@ -32,8 +32,6 @@ import lombok.Getter;
 /**
  * Enumeration of message types that can be received in the chat.
  */
-@AllArgsConstructor
-@Getter
 public enum ChatMessageType
 {
 	/**
@@ -202,7 +200,13 @@ public enum ChatMessageType
 	 */
 	UNKNOWN(-1);
 
+	@Getter
 	private final int type;
+
+	ChatMessageType(int type)
+	{
+		this.type = type;
+	}
 
 	private static final Map<Integer, ChatMessageType> CHAT_MESSAGE_TYPES = new HashMap<>();
 

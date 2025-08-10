@@ -30,7 +30,6 @@ import lombok.RequiredArgsConstructor;
 /**
  * Enum of all official icons that Jagex uses in chat.
  */
-@RequiredArgsConstructor
 @Getter
 public enum IconID
 {
@@ -51,6 +50,11 @@ public enum IconID
 	LEAGUE(22);
 
 	private final int index;
+
+	IconID(int index)
+	{
+		this.index = index;
+	}
 
 	@Override
 	public String toString()

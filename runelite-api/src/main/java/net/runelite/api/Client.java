@@ -816,7 +816,7 @@ public interface Client extends OAuthApi, GameEngine
 	 * @param var the {@link net.runelite.api.gameval.VarClientID}
 	 * @param value the new value
 	 */
-	void setVarcStrValue(@VarCStr int var, String value);
+	void setVar(int var1, String var2);
 
 	/**
 	 * Sets a VarClientInt to the passed value
@@ -1995,6 +1995,8 @@ public interface Client extends OAuthApi, GameEngine
 	 */
 	@Nullable
 	ClanSettings getGuestClanSettings();
+
+	
 
 	/**
 	 * Get clan channel by id.

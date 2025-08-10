@@ -41,54 +41,57 @@ import net.runelite.api.WorldView;
  * <p>
  * The unit of a LocalPoint is 1/128th of a tile.
  */
-@Value
-@RequiredArgsConstructor
 public class LocalPoint
 {
 	/**
 	 * X and Y axis coordinates.
 	 */
 	private final int x, y;
-	private final int worldView;
+	private final WorldView worldView;
 
-	/**
-	 * Gets the x coordinate
-	 */
-	public int getX() {
-		return x;
-	}
-
-	/**
-	 * Gets the y coordinate
-	 */
-	public int getY() {
-		return y;
-	}
-
-	/**
-	 * Gets the world view ID for OpenOSRS compatibility
-	 */
-	public int getWorldView() {
-		return worldView;
-	}
-
-	/**
-	 * Gets the world view object
-	 */
-	public WorldView getWorldViewObject() {
-		// Stub implementation for OpenOSRS compatibility
-		return null;
-	}
-
-	public LocalPoint(int x, int y, WorldView wv)
+	public LocalPoint(int x, int y, WorldView worldView)
 	{
-		this(x, y, wv.getId());
+		this.x = x;
+		this.y = y;
+		this.worldView = worldView;
 	}
 
 	@Deprecated
 	public LocalPoint(int x, int y)
 	{
-		this(x, y, -1);
+		this(x, y, null);
+	}
+
+	public int getX()
+	{
+		return x;
+	}
+
+	public int getY()
+	{
+		return y;
+	}
+
+	public WorldView getWorldView()
+	{
+		return worldView;
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		LocalPoint that = (LocalPoint) o;
+		return x == that.x &&
+			y == that.y &&
+			java.util.Objects.equals(worldView, that.worldView);
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return java.util.Objects.hash(x, y, worldView);
 	}
 
 	@Nullable
@@ -220,7 +223,7 @@ public class LocalPoint
 		return new LocalPoint(
 			(x << Perspective.LOCAL_COORD_BITS) + (1 << Perspective.LOCAL_COORD_BITS - 1),
 			(y << Perspective.LOCAL_COORD_BITS) + (1 << Perspective.LOCAL_COORD_BITS - 1),
-			scene.getWorldViewId()
+			scene.getWorldView()
 		);
 	}
 
@@ -237,7 +240,7 @@ public class LocalPoint
 		return new LocalPoint(
 			(x << Perspective.LOCAL_COORD_BITS) + (1 << Perspective.LOCAL_COORD_BITS - 1),
 			(y << Perspective.LOCAL_COORD_BITS) + (1 << Perspective.LOCAL_COORD_BITS - 1),
-			wv.getId()
+			wv
 		);
 	}
 

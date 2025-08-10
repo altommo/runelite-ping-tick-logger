@@ -27,7 +27,7 @@ package net.runelite.api;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor
+@Getter
 public enum Quest
 {
 	ANIMAL_MAGNETISM(0, "Animal Magnetism"),
@@ -236,11 +236,14 @@ public enum Quest
 	VALE_TOTEMS(5194, "Vale Totems"),
 	;
 
-	@Getter
 	private final int id;
-
-	@Getter
 	private final String name;
+
+	Quest(int id, String name)
+	{
+		this.id = id;
+		this.name = name;
+	}
 
 	public QuestState getState(Client client)
 	{

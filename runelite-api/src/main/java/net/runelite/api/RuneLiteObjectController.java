@@ -35,9 +35,14 @@ public abstract class RuneLiteObjectController
 
 	private int x;
 	private int y;
-	private int z;
+		private int z;
 
-	private int worldView = -1;
+	public void setZ(int z)
+	{
+		this.z = z;
+	}
+
+	private WorldView worldView;
 	private int level;
 
 	/**
@@ -67,10 +72,10 @@ public abstract class RuneLiteObjectController
 	 */
 	public void setLocation(LocalPoint point, int level)
 	{
-		setX(point.getX());
-		setY(point.getY());
-		setWorldView(point.getWorldView());
-		setLevel(level);
+		this.x = point.getX();
+		this.y = point.getY();
+		this.worldView = point.getWorldView();
+		this.level = level;
 	}
 
 	public LocalPoint getLocation()

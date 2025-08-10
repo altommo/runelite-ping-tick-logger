@@ -32,7 +32,6 @@ import lombok.Getter;
 /**
  * An enumeration of ranks of friends chat members.
  */
-@AllArgsConstructor
 @Getter
 public enum FriendsChatRank
 {
@@ -103,4 +102,9 @@ public enum FriendsChatRank
 	 * The value of the rank.
 	 */
 	private final int value;
+
+	FriendsChatRank(int value)
+	{
+		this.value = value;
+	}
 }

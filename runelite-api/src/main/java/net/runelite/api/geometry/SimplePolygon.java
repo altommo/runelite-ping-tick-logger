@@ -40,7 +40,6 @@ import net.runelite.api.Point;
 /**
  * A simple list of vertices that can be append or prepended to
  */
-@AllArgsConstructor
 @Getter
 @Setter
 public class SimplePolygon implements Shape
@@ -49,6 +48,14 @@ public class SimplePolygon implements Shape
 
 	protected int[] x, y;
 	protected int left, right;
+
+	public SimplePolygon(int[] x, int[] y, int left, int right)
+	{
+		this.x = x;
+		this.y = y;
+		this.left = left;
+		this.right = right;
+	}
 
 	public SimplePolygon()
 	{

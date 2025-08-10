@@ -36,16 +36,15 @@ import java.util.List;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor
 public class Shapes<T extends Shape> implements Shape
 {
-	public Shapes(T ...shape)
-	{
-		this(Arrays.asList(shape));
-	}
-
 	@Getter
 	private final List<T> shapes;
+
+	public Shapes(List<T> shapes)
+	{
+		this.shapes = shapes;
+	}
 
 	@Override
 	public Rectangle getBounds()

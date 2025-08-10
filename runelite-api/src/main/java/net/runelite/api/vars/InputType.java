@@ -25,14 +25,12 @@
 package net.runelite.api.vars;
 
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import net.runelite.api.gameval.VarClientID;
 
 /**
  * An enumeration of input types for {@link VarClientID#MESLAYERMODE}.
  */
 @Getter
-@RequiredArgsConstructor
 public enum InputType
 {
 	RUNELITE_CHATBOX_PANEL(-3),
@@ -42,4 +40,9 @@ public enum InputType
 	SEARCH(11);
 
 	private final int type;
+
+	InputType(int type)
+	{
+		this.type = type;
+	}
 }

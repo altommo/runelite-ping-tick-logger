@@ -55,6 +55,8 @@ public interface Scene extends Renderable
 	 */
 	int getWorldViewId();
 
+	WorldView getWorldView();
+
 	/**
 	 * Get the minimum scene level which will be rendered
 	 *

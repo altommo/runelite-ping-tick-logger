@@ -31,6 +31,7 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import net.runelite.api.coords.LocalPoint;
+import net.runelite.api.anim.AnimationController;
 
 @RequiredArgsConstructor
 public class RuneLiteObject extends RuneLiteObjectController
@@ -46,7 +47,7 @@ public class RuneLiteObject extends RuneLiteObjectController
 	 */
 	@Getter
 	@Nullable
-	private AnimationController animationController;
+	private net.runelite.api.anim.AnimationController animationController;
 
 	/**
 	 * The optional pose animation of the RuneLiteObject.
@@ -55,7 +56,7 @@ public class RuneLiteObject extends RuneLiteObjectController
 	@Setter
 	@Getter
 	@Nullable
-	private AnimationController poseAnimationController;
+	private net.runelite.api.anim.AnimationController poseAnimationController;
 
 	@Getter
 	@Setter
@@ -85,6 +86,28 @@ public class RuneLiteObject extends RuneLiteObjectController
 	public void setModel(Model baseModel)
 	{
 		this.baseModel = baseModel;
+	}
+
+	@Deprecated
+	public WorldView getWorldView()
+	{
+		return super.getWorldView();
+	}
+
+	@Deprecated
+	public void setZ(int z)
+	{
+		super.setZ(z);
+	}
+
+	public void setZ(int z)
+	{
+		super.setZ(z);
+	}
+
+	public WorldView getWorldView()
+	{
+		return super.getWorldView();
 	}
 
 	/**

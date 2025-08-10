@@ -684,7 +684,7 @@ public class MenuEntrySwapperExtendedPlugin extends Plugin
 	{
 		String option = Text.removeTags(entry.getOption()).toLowerCase();
 		//String target = Text.removeTags(entry.getTarget()).toLowerCase();
-		String target = Text.standardize(entry.getTarget(), true);
+		String target = Text.standardize(entry.getTarget());
 
 		if (config.hideTradeWith() && option.contains("trade with"))
 		{

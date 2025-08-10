@@ -30,7 +30,7 @@ import lombok.Getter;
 /**
  * An enumeration of possible instance templates and the area they occupy.
  */
-@AllArgsConstructor
+@Getter
 public enum InstanceTemplates
 {
 	RAIDS_LOBBY(3264, 5184, 0, 96, 32),
@@ -53,10 +53,7 @@ public enum InstanceTemplates
 	RAIDS_VESPULA(3264, 5280, 2, 96, 32),
 	RAIDS_CRABS(3264, 5344, 2, 96, 32);
 
-	/**
-	 * The base x-axis coordinate of the instance area.
-	 */
-	@Getter
+		@Getter
 	private final int baseX;
 
 	/**
@@ -82,6 +79,15 @@ public enum InstanceTemplates
 	 */
 	@Getter
 	private final int height;
+
+	InstanceTemplates(int baseX, int baseY, int plane, int width, int height)
+	{
+		this.baseX = baseX;
+		this.baseY = baseY;
+		this.plane = plane;
+		this.width = width;
+		this.height = height;
+	}
 
 	/**
 	 * Matches chunk data of an instance to the instance it belongs.

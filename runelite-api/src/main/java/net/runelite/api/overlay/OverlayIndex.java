@@ -31,9 +31,9 @@ import java.util.HashSet;
 import java.util.Set;
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 public class OverlayIndex
 {
+	private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(OverlayIndex.class);
 	private static final Set<Integer> overlays = new HashSet<>();
 
 	static

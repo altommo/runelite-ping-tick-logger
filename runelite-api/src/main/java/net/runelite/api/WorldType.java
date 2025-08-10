@@ -31,7 +31,6 @@ import lombok.AllArgsConstructor;
 /**
  * An enumeration of possible world types.
  */
-@AllArgsConstructor
 public enum WorldType
 {
 	/**
@@ -94,6 +93,11 @@ public enum WorldType
 	SEASONAL(1 << 30);
 
 	private final int mask;
+
+	WorldType(int mask)
+	{
+		this.mask = mask;
+	}
 
 	private static final EnumSet<WorldType> PVP_WORLD_TYPES = EnumSet.of(
 		DEADMAN, // dmmt worlds are also flaged as DEADMAN

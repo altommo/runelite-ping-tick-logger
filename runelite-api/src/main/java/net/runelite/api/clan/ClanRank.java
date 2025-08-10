@@ -37,7 +37,6 @@ import lombok.Value;
  * @see #ADMINISTRATOR
  * @see #GUEST
  */
-@Value
 public class ClanRank
 {
 	public static final ClanRank JMOD = new ClanRank(127);
@@ -50,4 +49,29 @@ public class ClanRank
 	 * The rank, -1 to 127.
 	 */
 	private final int rank;
+
+	public ClanRank(int rank)
+	{
+		this.rank = rank;
+	}
+
+	public int getRank()
+	{
+		return rank;
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		ClanRank clanRank = (ClanRank) o;
+		return rank == clanRank.rank;
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return rank;
+	}
 }

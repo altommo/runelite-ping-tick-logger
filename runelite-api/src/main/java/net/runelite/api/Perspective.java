@@ -452,7 +452,7 @@ public class Perspective
 		int sceneY = point.getSceneY();
 		if (sceneX >= 0 && sceneY >= 0 && sceneX < SCENE_SIZE && sceneY < SCENE_SIZE)
 		{
-			var wv = client.getWorldView(point.getWorldView());
+						var wv = client.getWorldView(point.getWorldView().getId());
 			byte[][][] tileSettings = wv.getTileSettings();
 			int[][][] tileHeights = wv.getTileHeights();
 

@@ -37,6 +37,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class RectangleUnion
 {
+	private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(RectangleUnion.class);
+
 	private RectangleUnion()
 	{
 	}
@@ -47,6 +49,15 @@ public class RectangleUnion
 	public static class Rectangle
 	{
 		private final int x1, y1, x2, y2;
+
+		public int getX1() { return x1; }
+		public int getX2() { return x2; }
+
+		/** Backport: (x1,y1,x2,y2) -> (x,y,w,h). */
+		@Deprecated
+		public Rectangle(int x1, int y1, int x2, int y2) {
+		    this(x1, y1, Math.max(0, x2 - x1), Math.max(0, y2 - y1));
+		}
 	}
 
 	/**
@@ -75,7 +86,7 @@ public class RectangleUnion
 
 		// ranges of our scan line with how many rectangles it is occluding
 		Segments segments = new Segments();
-		Shapes<SimplePolygon> out = new Shapes<>(new ArrayList<>());
+		Shapes<SimplePolygon> out = new Shapes<SimplePolygon>(new ArrayList<SimplePolygon>());
 		ChangingState cs = new ChangingState(out);
 
 		// Walk a beam left to right, colliding with any vertical edges of rectangles
@@ -168,8 +179,7 @@ public class RectangleUnion
 		return out;
 	}
 
-	@RequiredArgsConstructor
-	private static class ChangingState
+		private static class ChangingState
 	{
 		final Shapes<SimplePolygon> out;
 
@@ -177,6 +187,18 @@ public class RectangleUnion
 		int delta;
 
 		Segment first;
+
+		ChangingState(Shapes<SimplePolygon> out)
+		{
+			this.out = out;
+		}
+
+		/** Backport: accept Shapes<SimplePolygon>. */
+		@Deprecated
+		public ChangingState(Shapes<SimplePolygon> out, boolean unused)
+		{
+		    // no-op; keep for binary/source compatibility
+		}
 
 		void touch(Segment s)
 		{
@@ -214,7 +236,7 @@ public class RectangleUnion
 					s.chunk = null;
 					c.left = null;
 					c.right = null;
-					out.getShapes().add(c);
+					out.getShapes().add((SimplePolygon)c);
 				}
 				else
 				{

@@ -286,7 +286,8 @@ public class OneClick extends Plugin
 	private void convertStringToCustomItemMap()
 	{
 		items.clear();
-		Splitter.on("\n")
+		Splitter.on("
+")
 			.omitEmptyStrings()
 			.trimResults()
 			.splitToList(config.getCustomIds())
