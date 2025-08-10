@@ -1,0 +1,344 @@
+ANTLR Tool version 4.11.1 used for code generation does not match the current runtime version 4.13.1
+ANTLR Runtime version 4.11.1 used for parser compilation does not match the current runtime version 4.13.1
+ANTLR Tool version 4.11.1 used for code generation does not match the current runtime version 4.13.1
+ANTLR Runtime version 4.11.1 used for parser compilation does not match the current runtime version 4.13.1
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\BankMainBuild.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\BankpinButtonSetup.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\BankSearchFilter.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\ChatboxInputWidgetBuilder.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\ChatBuilder.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\ChatDefaultOnKey.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\ChatSend.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\ChatSplitBuilder.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\ChatTimestamp.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\CombatInterfaceSP.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\DestroyOnOpKey.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\ExamineItem.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\FakeXpDrop.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\FriendsChatSendKick.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\FriendUpdate.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\GeExamineInfoText.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\GELayout.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\IgnoreUpdate.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\LayoutResizableStones.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\MagicSpellbookRedraw.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\NewOptionsPanelZoomListener.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\NewOptionsPanelZoomSetter.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\NewOptionsPanelZoomSlider.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\null.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\OpenBankSearchInput.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\OptionsPanelRebuilder.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\OptionsPanelZoomMouseListener.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\OptionsPanelZoomUpdater.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\PrivateMessage.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\QuestFilter.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\ScrollWheelZoomHandler.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\SendPrivateMessage.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\SkillTabBuilder.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\SkillTabTotalLevel.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\TriggerBankLayout.rs2asm
+[debug] Assembling C:\Users\hp\Development\runelite\runelite-client\src\main\scripts\ZoomHandler.rs2asm
+[info] Assembled 36 scripts
+[ERROR] COMPILATION ERROR : 
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/cerberus/CerberusConfig.java:[201,17] cannot find symbol
+  symbol:   method enumClass()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/cerberus/CerberusConfig.java:[216,17] cannot find symbol
+  symbol:   method enumClass()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/nex/NexConfig.java:[66,17] cannot find symbol
+  symbol:   method enumClass()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/nex/NexConfig.java:[103,17] cannot find symbol
+  symbol:   method enumClass()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/nex/NexConfig.java:[117,17] cannot find symbol
+  symbol:   method enumClass()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/alchemicalhydra/AlchemicalHydraConfig.java:[112,17] cannot find symbol
+  symbol:   method enumClass()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/alchemicalhydra/AlchemicalHydraConfig.java:[219,17] cannot find symbol
+  symbol:   method enumClass()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[77,17] cannot find symbol
+  symbol:   method disabledBy()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[499,17] cannot find symbol
+  symbol:   method disabledBy()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[526,17] cannot find symbol
+  symbol:   method disabledBy()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[553,17] cannot find symbol
+  symbol:   method disabledBy()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[580,17] cannot find symbol
+  symbol:   method disabledBy()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[607,17] cannot find symbol
+  symbol:   method disabledBy()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[634,17] cannot find symbol
+  symbol:   method disabledBy()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[661,17] cannot find symbol
+  symbol:   method disabledBy()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[688,17] cannot find symbol
+  symbol:   method disabledBy()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[717,17] cannot find symbol
+  symbol:   method disabledBy()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/grotesqueguardians/GrotesqueGuardiansConfig.java:[136,17] cannot find symbol
+  symbol:   method enumClass()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/nightmare/NightmareConfig.java:[101,17] cannot find symbol
+  symbol:   method enumClass()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerattacktimer/PlayerAttackTimerConfig.java:[80,17] cannot find symbol
+  symbol:   method disabledBy()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerattacktimer/PlayerAttackTimerConfig.java:[99,17] cannot find symbol
+  symbol:   method parse()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerattacktimer/PlayerAttackTimerConfig.java:[100,17] cannot find symbol
+  symbol:   method clazz()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerattacktimer/PlayerAttackTimerConfig.java:[101,17] cannot find symbol
+  symbol:   method method()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerattacktimer/PlayerAttackTimerConfig.java:[118,17] cannot find symbol
+  symbol:   method enumClass()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerscouter/PlayerScouterConfig.java:[97,21] cannot find symbol
+  symbol:   variable GP
+  location: @interface net.runelite.client.config.Units
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerscouter/PlayerScouterConfig.java:[109,21] cannot find symbol
+  symbol:   variable GP
+  location: @interface net.runelite.client.config.Units
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[179,17] cannot find symbol
+  symbol:   method unhide()
+  location: @interface net.runelite.client.config.ConfigSection
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[254,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[287,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[320,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[353,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[386,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[419,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[452,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[485,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[518,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[551,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[584,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[634,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[659,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[692,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[725,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[758,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[791,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[824,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[857,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[890,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[923,17] cannot find symbol
+  symbol:   method hide()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideunder/HideUnderConfig.java:[30,17] cannot find symbol
+  symbol:   method unhideValue()
+  location: @interface net.runelite.client.config.ConfigItem
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.6.1:compile (default-compile) on project client: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/cerberus/CerberusConfig.java:[201,17] cannot find symbol
+[ERROR]   symbol:   method enumClass()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/cerberus/CerberusConfig.java:[216,17] cannot find symbol
+[ERROR]   symbol:   method enumClass()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/nex/NexConfig.java:[66,17] cannot find symbol
+[ERROR]   symbol:   method enumClass()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/nex/NexConfig.java:[103,17] cannot find symbol
+[ERROR]   symbol:   method enumClass()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/nex/NexConfig.java:[117,17] cannot find symbol
+[ERROR]   symbol:   method enumClass()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/alchemicalhydra/AlchemicalHydraConfig.java:[112,17] cannot find symbol
+[ERROR]   symbol:   method enumClass()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/alchemicalhydra/AlchemicalHydraConfig.java:[219,17] cannot find symbol
+[ERROR]   symbol:   method enumClass()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[77,17] cannot find symbol
+[ERROR]   symbol:   method disabledBy()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[499,17] cannot find symbol
+[ERROR]   symbol:   method disabledBy()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[526,17] cannot find symbol
+[ERROR]   symbol:   method disabledBy()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[553,17] cannot find symbol
+[ERROR]   symbol:   method disabledBy()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[580,17] cannot find symbol
+[ERROR]   symbol:   method disabledBy()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[607,17] cannot find symbol
+[ERROR]   symbol:   method disabledBy()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[634,17] cannot find symbol
+[ERROR]   symbol:   method disabledBy()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[661,17] cannot find symbol
+[ERROR]   symbol:   method disabledBy()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[688,17] cannot find symbol
+[ERROR]   symbol:   method disabledBy()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideprayers/HidePrayersConfig.java:[717,17] cannot find symbol
+[ERROR]   symbol:   method disabledBy()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/grotesqueguardians/GrotesqueGuardiansConfig.java:[136,17] cannot find symbol
+[ERROR]   symbol:   method enumClass()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/nightmare/NightmareConfig.java:[101,17] cannot find symbol
+[ERROR]   symbol:   method enumClass()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerattacktimer/PlayerAttackTimerConfig.java:[80,17] cannot find symbol
+[ERROR]   symbol:   method disabledBy()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerattacktimer/PlayerAttackTimerConfig.java:[99,17] cannot find symbol
+[ERROR]   symbol:   method parse()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerattacktimer/PlayerAttackTimerConfig.java:[100,17] cannot find symbol
+[ERROR]   symbol:   method clazz()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerattacktimer/PlayerAttackTimerConfig.java:[101,17] cannot find symbol
+[ERROR]   symbol:   method method()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerattacktimer/PlayerAttackTimerConfig.java:[118,17] cannot find symbol
+[ERROR]   symbol:   method enumClass()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerscouter/PlayerScouterConfig.java:[97,21] cannot find symbol
+[ERROR]   symbol:   variable GP
+[ERROR]   location: @interface net.runelite.client.config.Units
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/playerscouter/PlayerScouterConfig.java:[109,21] cannot find symbol
+[ERROR]   symbol:   variable GP
+[ERROR]   location: @interface net.runelite.client.config.Units
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[179,17] cannot find symbol
+[ERROR]   symbol:   method unhide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigSection
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[254,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[287,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[320,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[353,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[386,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[419,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[452,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[485,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[518,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[551,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[584,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[634,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[659,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[692,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[725,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[758,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[791,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[824,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[857,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[890,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/aoewarnings/AoeWarningConfig.java:[923,17] cannot find symbol
+[ERROR]   symbol:   method hide()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] /C:/Users/hp/Development/runelite/runelite-client/src/main/java/net/runelite/client/plugins/hideunder/HideUnderConfig.java:[30,17] cannot find symbol
+[ERROR]   symbol:   method unhideValue()
+[ERROR]   location: @interface net.runelite.client.config.ConfigItem
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

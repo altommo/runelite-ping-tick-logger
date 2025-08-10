@@ -35,13 +35,29 @@ public @interface ConfigItem
 {
 	int position() default -1;
 
-	String keyName();
+	String keyName() default "";
 
 	String name();
 
 	String description();
 
 	boolean hidden() default false;
+	
+	String unhide() default "";
+	
+	String unhideValue() default "";
+	
+	String hide() default "";
+	
+	String disabledBy() default "";
+	
+	Class<?> enumClass() default Object.class;
+	
+	boolean parse() default false;
+	
+	Class<?> clazz() default Object.class;
+	
+	String method() default "";
 
 	String warning() default "";
 

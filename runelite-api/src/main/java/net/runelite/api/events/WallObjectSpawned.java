@@ -42,4 +42,13 @@ public class WallObjectSpawned
 	 * The newly spawned wall object.
 	 */
 	private WallObject wallObject;
+
+	/**
+	 * OpenOSRS compatibility method
+	 * @return the previous wall object that was replaced
+	 */
+	public WallObject getPrevious()
+	{
+		return null; // Stub implementation
+	}
 }

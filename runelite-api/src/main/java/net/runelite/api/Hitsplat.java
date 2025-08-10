@@ -53,10 +53,23 @@ import net.runelite.api.annotations.HitsplatType;
 public class Hitsplat
 {
 	/**
+	 * OpenOSRS compatibility class - provides constants for hitsplat types
+	 */
+	public static final class HitsplatType
+	{
+		public static final int DAMAGE_ME = HitsplatID.DAMAGE_ME;
+		public static final int BLOCK_ME = HitsplatID.BLOCK_ME;
+		public static final int DAMAGE_OTHER = HitsplatID.DAMAGE_OTHER;
+		public static final int BLOCK_OTHER = HitsplatID.BLOCK_OTHER;
+		public static final int HEAL = HitsplatID.HEAL;
+		public static final int DISEASE = HitsplatID.DAMAGE_OTHER_CYAN;
+		public static final int POISON = HitsplatID.DAMAGE_OTHER_YELLOW;
+	}
+
+	/**
 	 * The type of hitsplat.
 	 */
-	@Getter(onMethod_ = {@HitsplatType})
-	@HitsplatType
+	@Getter
 	private int hitsplatType;
 
 	/**
@@ -71,7 +84,7 @@ public class Hitsplat
 	@Getter
 	private int disappearsOnGameCycle;
 
-	public Hitsplat(@HitsplatType int hitsplatType, int amount, int disappearsOnGameCycle)
+	public Hitsplat(int hitsplatType, int amount, int disappearsOnGameCycle)
 	{
 		this.hitsplatType = hitsplatType;
 		this.amount = amount;

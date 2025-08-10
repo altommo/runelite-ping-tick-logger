@@ -51,6 +51,35 @@ public class LocalPoint
 	private final int x, y;
 	private final int worldView;
 
+	/**
+	 * Gets the x coordinate
+	 */
+	public int getX() {
+		return x;
+	}
+
+	/**
+	 * Gets the y coordinate
+	 */
+	public int getY() {
+		return y;
+	}
+
+	/**
+	 * Gets the world view ID for OpenOSRS compatibility
+	 */
+	public int getWorldView() {
+		return worldView;
+	}
+
+	/**
+	 * Gets the world view object
+	 */
+	public WorldView getWorldViewObject() {
+		// Stub implementation for OpenOSRS compatibility
+		return null;
+	}
+
 	public LocalPoint(int x, int y, WorldView wv)
 	{
 		this(x, y, wv.getId());

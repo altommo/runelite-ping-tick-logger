@@ -168,19 +168,19 @@ class WikiDpsManager
 		/**
 		 * parent widget of the interface, install target
 		 */
-		@Getter(onMethod_ = @Component)
+		@Getter
 		private final int parentId;
 
 		/**
 		 * the "Set Bonus" button widget layer
 		 */
-		@Getter(onMethod_ = @Component)
+		@Getter
 		private final int setBonusId;
 
 		/**
 		 * the "Stat Bonus" button widget layer, which replaces "Set Bonus" after it is clicked
 		 */
-		@Getter(onMethod_ = @Component)
+		@Getter
 		private final int statBonusId;
 
 		/**

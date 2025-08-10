@@ -42,7 +42,7 @@ public class Text
 {
 	private static final JaroWinklerDistance DISTANCE = new JaroWinklerDistance();
 	private static final Pattern TAG_REGEXP = Pattern.compile("<[^>]*>");
-	private static final Splitter COMMA_SPLITTER = Splitter
+	public static final Splitter COMMA_SPLITTER = Splitter
 		.on(",")
 		.omitEmptyStrings()
 		.trimResults();
@@ -116,10 +116,7 @@ public class Text
 	 *
 	 * @return The given `str` that is standardized
 	 */
-	public static String standardize(String str)
-	{
-		return removeTags(str).replace('\u00A0', ' ').trim().toLowerCase();
-	}
+	
 
 	/**
 	 * Convert a string into Jagex username format
@@ -232,5 +229,38 @@ public class Text
 			}
 		}
 		return true;
+	}
+
+	/**
+	 * Standardizes text by removing tags, normalizing whitespace, and converting to lowercase
+	 * Compatibility method for API signature changes
+	 *
+	 * @param text the text to standardize
+	 * @return standardized text
+	 */
+	public static String standardize(String text)
+	{
+		if (text == null)
+		{
+			return "";
+		}
+		return removeTags(text).toLowerCase().trim().replaceAll("\\s+", " ");
+	}
+
+	/**
+	 * Standardizes text with additional options - compatibility overload
+	 *
+	 * @param text the text to standardize
+	 * @param removeTags whether to remove formatting tags
+	 * @return standardized text
+	 */
+	public static String standardize(String text, boolean removeTags)
+	{
+		if (text == null)
+		{
+			return "";
+		}
+		String result = removeTags ? removeTags(text) : text;
+		return result.toLowerCase().trim().replaceAll("\\s+", " ");
 	}
 }

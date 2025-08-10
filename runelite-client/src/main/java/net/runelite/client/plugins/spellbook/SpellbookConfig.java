@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024, Adam <Adam@sigterm.info>
+ * Copyright (c) 2019, Lucas <https://github.com/Lucwousin>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -26,9 +26,79 @@ package net.runelite.client.plugins.spellbook;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
+import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup(SpellbookConfig.GROUP)
+/**
+ * Configuration for the Spellbook plugin
+ */
+@ConfigGroup("spellbook")
 public interface SpellbookConfig extends Config
 {
-	String GROUP = "spellbook";
+    @ConfigItem(
+        position = 1,
+        keyName = "filter",
+        name = "Filter",
+        description = "Comma separated list of spells to show"
+    )
+    default String filter()
+    {
+        return "";
+    }
+    
+    @ConfigItem(
+        position = 2,
+        keyName = "size",
+        name = "Size",
+        description = "Size of spell icons"
+    )
+    default int size()
+    {
+        return 32;
+    }
+    
+    @ConfigItem(
+        position = 3,
+        keyName = "canDrag",
+        name = "Can Drag",
+        description = "Whether spells can be dragged around"
+    )
+    default boolean canDrag()
+    {
+        return false;
+    }
+    
+    void canDrag(boolean canDrag);
+    
+    @ConfigItem(
+        position = 4,
+        keyName = "scroll",
+        name = "Scroll",
+        description = "Enable spell scrolling"
+    )
+    default boolean scroll()
+    {
+        return true;
+    }
+    
+    @ConfigItem(
+        position = 5,
+        keyName = "enableMobile",
+        name = "Enable Mobile",
+        description = "Enable mobile spellbook features"
+    )
+    default boolean enableMobile()
+    {
+        return false;
+    }
+    
+    @ConfigItem(
+        position = 6,
+        keyName = "dragSpells",
+        name = "Drag Spells",
+        description = "Allow dragging spells around"
+    )
+    default boolean dragSpells()
+    {
+        return true;
+    }
 }

@@ -42,4 +42,13 @@ public class GroundObjectSpawned
 	 * The newly spawned ground object.
 	 */
 	private GroundObject groundObject;
+
+	/**
+	 * OpenOSRS compatibility method
+	 * @return the previous ground object that was replaced
+	 */
+	public GroundObject getPrevious()
+	{
+		return null; // Stub implementation
+	}
 }

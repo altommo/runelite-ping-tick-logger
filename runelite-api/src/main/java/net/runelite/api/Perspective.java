@@ -728,6 +728,46 @@ public class Perspective
 	}
 
 	/**
+	 * OpenOSRS compatibility method - Gets line polygon list for drawing lines between points
+	 * @param client the game client
+	 * @param localLocation1 first local location
+	 * @param localLocation2 second local location
+	 * @return list of polygons representing the line
+	 */
+	public static java.util.List<java.awt.Polygon> getLinePolyList(Client client, net.runelite.api.coords.WorldPoint localLocation1, net.runelite.api.coords.WorldPoint localLocation2)
+	{
+		java.util.List<java.awt.Polygon> polyList = new java.util.ArrayList<>();
+		
+		// Convert world points to local points
+		LocalPoint lp1 = LocalPoint.fromWorld(client.getTopLevelWorldView(), localLocation1);
+		LocalPoint lp2 = LocalPoint.fromWorld(client.getTopLevelWorldView(), localLocation2);
+		
+		if (lp1 == null || lp2 == null)
+		{
+			return polyList;
+		}
+		
+		// Convert to canvas points
+		Point cp1 = localToCanvas(client, lp1, client.getPlane());
+		Point cp2 = localToCanvas(client, lp2, client.getPlane());
+		
+		if (cp1 == null || cp2 == null)
+		{
+			return polyList;
+		}
+		
+		// Create a simple line polygon
+		java.awt.Polygon poly = new java.awt.Polygon();
+		poly.addPoint(cp1.getX(), cp1.getY());
+		poly.addPoint(cp2.getX(), cp2.getY());
+		poly.addPoint(cp2.getX() + 1, cp2.getY() + 1);
+		poly.addPoint(cp1.getX() + 1, cp1.getY() + 1);
+		
+		polyList.add(poly);
+		return polyList;
+	}
+
+	/**
 	 * Calculates image position and centers depending on image size.
 	 *
 	 * @param client the game client

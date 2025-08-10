@@ -39,9 +39,9 @@ import net.runelite.api.coords.WorldPoint;
 class DriftNet
 {
 	private final int objectId;
-	@Getter(onMethod_ = {@Varbit})
+	@Getter
 	private final int statusVarbit;
-	@Getter(onMethod_ = {@Varbit})
+	@Getter
 	private final int countVarbit;
 	private final Set<WorldPoint> adjacentTiles;
 

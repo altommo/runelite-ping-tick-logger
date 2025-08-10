@@ -71,6 +71,102 @@ public class WorldArea
 	@Getter
 	private int plane;
 
+	/**
+	 * Gets the x coordinate
+	 */
+	public int getX() {
+		return x;
+	}
+
+	/**
+	 * Gets the y coordinate
+	 */
+	public int getY() {
+		return y;
+	}
+
+	/**
+	 * Gets the width
+	 */
+	public int getWidth() {
+		return width;
+	}
+
+	/**
+	 * Gets the height
+	 */
+	public int getHeight() {
+		return height;
+	}
+
+	/**
+	 * Gets the plane
+	 */
+	public int getPlane() {
+		return plane;
+	}
+
+	/**
+	 * OpenOSRS compatibility method
+	 * @param client the client
+	 * @param area the target area
+	 * @return true if can melee
+	 */
+	public boolean canMelee(net.runelite.api.Client client, WorldArea area)
+	{
+		// Stub implementation for OpenOSRS compatibility
+		return false;
+	}
+
+	/**
+	 * OpenOSRS compatibility method - Calculate next travelling point
+	 * @param client the client
+	 * @param area the target area
+	 * @param checkNorth check north direction
+	 * @param predicate condition predicate
+	 * @return the next WorldPoint or null
+	 */
+	public net.runelite.api.coords.WorldPoint calculateNextTravellingPoint(net.runelite.api.Client client, WorldArea area, boolean checkNorth, java.util.function.Predicate<net.runelite.api.coords.WorldPoint> predicate)
+	{
+		// Stub implementation for OpenOSRS compatibility
+		// This would typically calculate pathfinding between areas
+		return null;
+	}
+
+	/**
+	 * OpenOSRS compatibility method
+	 * @param client the client
+	 * @param area the target area
+	 * @return true if has line of sight
+	 */
+	public boolean hasLineOfSightTo(net.runelite.api.Client client, WorldArea area)
+	{
+		// Delegate to the proper WorldView method by getting the top-level world view
+		var wv = client.getTopLevelWorldView();
+		if (wv != null)
+		{
+			return hasLineOfSightTo(wv, area);
+		}
+		return false;
+	}
+
+	/**
+	 * OpenOSRS compatibility method
+	 * @param client the client
+	 * @param point the target point
+	 * @return true if has line of sight
+	 */
+	public boolean hasLineOfSightTo(net.runelite.api.Client client, net.runelite.api.coords.WorldPoint point)
+	{
+		// Delegate to the proper WorldView method by getting the top-level world view
+		var wv = client.getTopLevelWorldView();
+		if (wv != null)
+		{
+			return hasLineOfSightTo(wv, point);
+		}
+		return false;
+	}
+
 	public WorldArea(int x, int y, int width, int height, int plane)
 	{
 		this.x = x;

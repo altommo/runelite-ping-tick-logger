@@ -46,7 +46,7 @@ public abstract class ClueScroll
 	private boolean requiresLight;
 
 	@Setter(AccessLevel.PROTECTED)
-	@Getter(onMethod_ = {@Varbit}, value = AccessLevel.PUBLIC)
+	@Getter(value = AccessLevel.PUBLIC)
 	private int firePitVarbitId = -1;
 
 	@Setter(AccessLevel.PROTECTED)

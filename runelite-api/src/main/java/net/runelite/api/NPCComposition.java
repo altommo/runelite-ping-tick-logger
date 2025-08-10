@@ -151,4 +151,15 @@ public interface NPCComposition extends ParamHolder
 	 * @return
 	 */
 	int[] getStats();
+
+	/**
+	 * OpenOSRS compatibility method - Get the overhead icon for this NPC
+	 * @return the overhead icon ID, or -1 if none
+	 */
+	default int getOverheadIcon()
+	{
+		// Stub implementation for OpenOSRS compatibility
+		// Most NPCs don't have overhead icons
+		return -1;
+	}
 }

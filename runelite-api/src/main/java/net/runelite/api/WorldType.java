@@ -150,4 +150,24 @@ public enum WorldType
 	{
 		return worldTypes.stream().anyMatch(PVP_WORLD_TYPES::contains);
 	}
+
+	/**
+	 * OpenOSRS compatibility method - checks if world types contain all PVP types
+	 * @param worldTypes the world types to check
+	 * @return true if all PVP world types are present
+	 */
+	public static boolean isAllPvpWorld(EnumSet<WorldType> worldTypes)
+	{
+		return worldTypes.contains(PVP) || worldTypes.contains(HIGH_RISK);
+	}
+
+	/**
+	 * OpenOSRS compatibility method - checks if world types contain deadman world
+	 * @param worldTypes the world types to check
+	 * @return true if deadman world type is present
+	 */
+	public static boolean isDeadmanWorld(EnumSet<WorldType> worldTypes)
+	{
+		return worldTypes.contains(DEADMAN) || (worldTypes.contains(SEASONAL) && worldTypes.contains(DEADMAN));
+	}
 }

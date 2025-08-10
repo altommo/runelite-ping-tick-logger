@@ -1,0 +1,44 @@
+src\main\java\net\runelite\client\plugins\menuentryswapperextended\util\ConstructionMode.java:3: error: package lombok does not exist
+import lombok.Getter;
+             ^
+src\main\java\net\runelite\client\plugins\menuentryswapperextended\util\ConstructionMode.java:7: error: cannot find symbol
+@Getter
+ ^
+  symbol: class Getter
+src\main\java\net\runelite\client\config\Keybind.java:27: error: package com.google.common.collect does not exist
+import com.google.common.collect.BiMap;
+                                ^
+src\main\java\net\runelite\client\config\Keybind.java:28: error: package com.google.common.collect does not exist
+import com.google.common.collect.ImmutableBiMap;
+                                ^
+src\main\java\net\runelite\client\config\Keybind.java:31: error: package javax.annotation does not exist
+import javax.annotation.Nullable;
+                       ^
+src\main\java\net\runelite\client\config\Keybind.java:32: error: package lombok does not exist
+import lombok.EqualsAndHashCode;
+             ^
+src\main\java\net\runelite\client\config\Keybind.java:33: error: package lombok does not exist
+import lombok.Getter;
+             ^
+src\main\java\net\runelite\client\config\Keybind.java:39: error: cannot find symbol
+@Getter
+ ^
+  symbol: class Getter
+src\main\java\net\runelite\client\config\Keybind.java:40: error: cannot find symbol
+@EqualsAndHashCode
+ ^
+  symbol: class EqualsAndHashCode
+src\main\java\net\runelite\client\config\Keybind.java:43: error: cannot find symbol
+	private static final BiMap<Integer, Integer> MODIFIER_TO_KEY_CODE = new ImmutableBiMap.Builder<Integer, Integer>()
+	                     ^
+  symbol:   class BiMap
+  location: class Keybind
+src\main\java\net\runelite\client\config\Keybind.java:187: error: cannot find symbol
+	@Nullable
+	 ^
+  symbol:   class Nullable
+  location: class Keybind
+src\main\java\net\runelite\client\config\Keybind.java:43: error: package ImmutableBiMap does not exist
+	private static final BiMap<Integer, Integer> MODIFIER_TO_KEY_CODE = new ImmutableBiMap.Builder<Integer, Integer>()
+	                                                                                      ^
+12 errors

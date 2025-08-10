@@ -70,6 +70,36 @@ public class WorldPoint
 	private final int plane;
 
 	/**
+	 * Constructor for WorldPoint
+	 */
+	public WorldPoint(int x, int y, int plane) {
+		this.x = x;
+		this.y = y;
+		this.plane = plane;
+	}
+
+	/**
+	 * Gets the x coordinate
+	 */
+	public int getX() {
+		return x;
+	}
+
+	/**
+	 * Gets the y coordinate  
+	 */
+	public int getY() {
+		return y;
+	}
+
+	/**
+	 * Gets the plane
+	 */
+	public int getPlane() {
+		return plane;
+	}
+
+	/**
 	 * Offsets the x-axis coordinate by the passed value.
 	 *
 	 * @param dx the offset

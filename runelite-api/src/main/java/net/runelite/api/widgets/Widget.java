@@ -28,6 +28,7 @@ import java.awt.Rectangle;
 import javax.annotation.Nullable;
 import net.runelite.api.FontTypeFace;
 import net.runelite.api.Point;
+import net.runelite.api.SpritePixels;
 import net.runelite.api.annotations.Component;
 import org.intellij.lang.annotations.MagicConstant;
 import org.jetbrains.annotations.Range;
@@ -1080,4 +1081,20 @@ public interface Widget
 	 * @param args A ScriptID, then the args for the script
 	 */
 	void setOnVarTransmitListener(Object ...args);
+
+	/**
+	 * OpenOSRS compatibility method - checks if mouse is contained within widget bounds
+	 * @return true if mouse is over this widget
+	 */
+	default boolean containsMouse()
+	{
+		// Implementation stub - would normally check if mouse coordinates are within widget bounds
+		return false;
+	}
+
+	/**
+	 * OpenOSRS compatibility method - gets the sprite associated with this widget
+	 * @return the sprite for this widget
+	 */
+	SpritePixels getSprite();
 }

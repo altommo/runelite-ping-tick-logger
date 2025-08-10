@@ -1,0 +1,7 @@
+=============================================== 
+RuneLite Enhanced Build Log - 10/08/2025 19:22:47.05 
+=============================================== 
+ 
+[PHASE 1] Maven Clean 
+[19:22:47.09] Starting Maven clean... 
+Running: mvn clean 

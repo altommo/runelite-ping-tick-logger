@@ -571,4 +571,51 @@ public class ImageUtil
 
 		return sprite;
 	}
+
+	/**
+	 * OpenOSRS compatibility method - Resizes a sprite
+	 * @param client the game client
+	 * @param sprite the sprite to resize
+	 * @param width new width
+	 * @param height new height
+	 * @return resized BufferedImage
+	 */
+	public static BufferedImage resizeSprite(Client client, net.runelite.api.SpritePixels sprite, int width, int height)
+	{
+		if (sprite == null)
+		{
+			return null;
+		}
+		
+		// Convert SpritePixels to BufferedImage first
+		BufferedImage originalImage = spritePixelsToBufferedImage(sprite);
+		if (originalImage == null)
+		{
+			return null;
+		}
+		
+		// Resize the image
+		return resizeImage(originalImage, width, height);
+	}
+
+	/**
+	 * Convert SpritePixels to BufferedImage
+	 */
+	private static BufferedImage spritePixelsToBufferedImage(net.runelite.api.SpritePixels sprite)
+	{
+		try
+		{
+			int width = sprite.getWidth();
+			int height = sprite.getHeight();
+			int[] pixels = sprite.getPixels();
+			
+			BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+			image.setRGB(0, 0, width, height, pixels, 0, width);
+			return image;
+		}
+		catch (Exception e)
+		{
+			return null;
+		}
+	}
 }

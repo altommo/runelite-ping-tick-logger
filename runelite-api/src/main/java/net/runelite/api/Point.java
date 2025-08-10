@@ -36,6 +36,28 @@ public class Point
 	private final int y;
 
 	/**
+	 * Constructor for Point
+	 */
+	public Point(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	/**
+	 * Gets the x coordinate
+	 */
+	public int getX() {
+		return x;
+	}
+
+	/**
+	 * Gets the y coordinate
+	 */
+	public int getY() {
+		return y;
+	}
+
+	/**
 	 * Gets the distance between this point and another.
 	 *
 	 * @param other other point

@@ -53,4 +53,12 @@ public interface DynamicObject extends Renderable
 	 * @return
 	 */
 	Model getModelZbuf();
+
+	/**
+	 * Gets the animation ID for this dynamic object
+	 * @return the animation ID
+	 */
+	default int getAnimationID() {
+		return -1; // Stub implementation
+	}
 }

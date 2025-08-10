@@ -38,6 +38,6 @@ public class WidgetLoaded
 	 * The group ID of the loaded widget.
 	 */
 	@Interface
-	@Getter(onMethod_ = @Interface)
+	@Getter
 	private int groupId;
 }

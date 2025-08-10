@@ -2208,6 +2208,24 @@ public interface Client extends OAuthApi, GameEngine
 	}
 
 	/**
+	 * OpenOSRS compatibility method
+	 * @return cached players array
+	 */
+	default Player[] getCachedPlayers()
+	{
+		return getPlayers().toArray(new Player[0]);
+	}
+
+	/**
+	 * OpenOSRS compatibility method - Sets whether to compare appearance
+	 * @param comparing true to compare appearance
+	 */
+	default void setComparingAppearance(boolean comparing)
+	{
+		// Stub implementation for OpenOSRS compatibility
+	}
+
+	/**
 	 * Gets a list of all valid NPCs from the NPC cache.
 	 *
 	 * @return a list of all NPCs
@@ -2396,4 +2414,190 @@ public interface Client extends OAuthApi, GameEngine
 	 * animates transparency, otherwise it will share a reference. All other fields share a reference.
 	 */
 	Model applyTransformations(Model model, @Nullable Animation animA, int frameA, @Nullable Animation animB, int frameB);
+
+	/**
+	 * Sets the selected spell widget for spell casting
+	 * @param widgetID the widget ID to select
+	 */
+	void setSelectedSpellWidget(int widgetID);
+
+	/**
+	 * Gets the selected spell widget ID
+	 * @return the selected spell widget ID
+	 */
+	int getSelectedSpellWidget();
+
+	/**
+	 * Gets the selected spell child index
+	 * @return the selected spell child index
+	 */
+	int getSelectedSpellChildIndex();
+
+	/**
+	 * Sets the selected spell child index
+	 * @param index the child index to select
+	 */
+	void setSelectedSpellChildIndex(int index);
+
+	/**
+	 * Gets the number of menu options currently available
+	 * @return the menu option count
+	 */
+	int getMenuOptionCount();
+
+	/**
+	 * Sets whether to hide friend attack options in PvP areas
+	 * @param hide true to hide friend attack options
+	 */
+	void setHideFriendAttackOptions(boolean hide);
+
+	/**
+	 * Sets whether to hide player attack options in PvP areas
+	 * @param hide true to hide player attack options
+	 */
+	void setHidePlayerAttackOptions(boolean hide);
+
+	/**
+	 * Sets whether to hide clanmate attack options in PvP areas
+	 * @param hide true to hide clanmate attack options
+	 */
+	void setHideClanmateAttackOptions(boolean hide);
+
+	/**
+	 * Sets the X coordinate of the selected scene tile
+	 * @param x the X coordinate
+	 */
+	void setSelectedSceneTileX(int x);
+
+	/**
+	 * Sets the Y coordinate of the selected scene tile
+	 * @param y the Y coordinate
+	 */
+	void setSelectedSceneTileY(int y);
+
+	void setSelectedSpellChild(int childId);
+	int getSelectedSpellChild();
+	Widget getSpellSelected();
+	boolean isSpellSelected();
+	void setSpellSelected(boolean selected);
+	void invokeMenuAction(String action, String target, int id, int actionIndex, int itemId, int canvasX, int canvasY);
+	void setViewportWalking(boolean enabled);
+
+	/**
+	 * Sets the selected spell item ID
+	 * @param itemId the item ID to select
+	 */
+	void setSelectedSpellItemId(int itemId);
+
+	/**
+	 * Sets the selected spell name
+	 * @param name the spell name
+	 */
+	void setSelectedSpellName(String name);
+
+
+
+	/**
+	 * Gets the selected spell name
+	 * @return the selected spell name
+	 */
+	String getSelectedSpellName();
+
+	/**
+	 * Gets the item composition for an item ID
+	 * @param itemId the item ID
+	 * @return the item composition
+	 */
+	ItemComposition getItemComposition(int itemId);
+
+	/**
+	 * Gets cached NPCs
+	 * @return array of cached NPCs
+	 */
+	NPC[] getCachedNPCs();
+
+	/**
+	 * Gets whether render self is enabled
+	 * @return true if render self is enabled
+	 */
+	boolean getRenderSelf();
+
+	/**
+	 * Sets whether the local player should be rendered
+	 * @param renderSelf true to render self
+	 */
+	default void setRenderSelf(boolean renderSelf)
+	{
+		// Implementation stub for OpenOSRS compatibility
+	}
+
+	/**
+	 * Sets whether to hide friend cast options
+	 * @param hide true to hide friend cast options
+	 */
+	void setHideFriendCastOptions(boolean hide);
+
+	/**
+	 * Sets whether to hide clanmate cast options
+	 * @param hide true to hide clanmate cast options
+	 */
+	void setHideClanmateCastOptions(boolean hide);
+
+	/**
+	 * Sets the unhidden casts set
+	 * @param casts the set of unhidden casts
+	 */
+	void setUnhiddenCasts(java.util.Set<String> casts);
+
+	/**
+	 * Gets the string stack
+	 * @return the string stack
+	 */
+	default String[] getStringStack()
+	{
+		return new String[0];
+	}
+
+	/**
+	 * Gets the string stack size
+	 * @return the string stack size
+	 */
+	default int getStringStackSize()
+	{
+		return 0;
+	}
+	/**
+	 * Sets a var value
+	 * @param varIndex the var index
+	 * @param value the value to set
+	 */
+	void setVar(int varIndex, String value);
+
+	/**
+	 * Sets the menu option count
+	 * @param count the menu option count
+	 */
+	default void setMenuOptionCount(int count)
+	{
+		// Implementation stub
+	}
+
+	/**
+	 * Gets alternative cached NPCs implementation
+	 * @return array of cached NPCs
+	 */
+	default NPC[] getCachedNPCs2()
+	{
+		return getCachedNPCs();
+	}
+
+	/**
+	 * Gets alternative selected spell name implementation
+	 * @return the selected spell name
+	 */
+	default String getSelectedSpellName2()
+	{
+		return getSelectedSpellName();
+	}
+
 }

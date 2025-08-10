@@ -37,4 +37,21 @@ public interface HashTable<T extends Node> extends Iterable<T>
 	 * @return the associated node
 	 */
 	T get(long value);
+
+	/**
+	 * OpenOSRS compatibility method - Gets all nodes as an array
+	 * @return array of all nodes
+	 */
+	default T[] getNodes()
+	{
+		// Convert iterator to array
+		java.util.List<T> nodeList = new java.util.ArrayList<>();
+		for (T node : this)
+		{
+			nodeList.add(node);
+		}
+		@SuppressWarnings("unchecked")
+		T[] array = (T[]) nodeList.toArray(new Node[0]);
+		return array;
+	}
 }

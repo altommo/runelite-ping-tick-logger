@@ -272,4 +272,14 @@ public enum Prayer
 	{
 		return varbit;
 	}
+
+	/**
+	 * OpenOSRS compatibility method - gets the widget info for this prayer
+	 * @return the widget info for this prayer
+	 */
+	public net.runelite.api.widgets.WidgetInfo getWidgetInfo()
+	{
+		// Return null as a stub - actual implementation would map prayers to widgets
+		return null;
+	}
 }

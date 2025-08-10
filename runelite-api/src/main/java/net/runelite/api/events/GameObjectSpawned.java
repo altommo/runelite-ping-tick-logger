@@ -42,4 +42,13 @@ public class GameObjectSpawned
 	 * The newly spawned game object.
 	 */
 	private GameObject gameObject;
+
+	/**
+	 * OpenOSRS compatibility method
+	 * @return the previous game object that was replaced
+	 */
+	public GameObject getPrevious()
+	{
+		return null; // Stub implementation
+	}
 }

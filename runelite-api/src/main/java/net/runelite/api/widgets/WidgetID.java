@@ -199,4 +199,51 @@ public final class WidgetID
 	public static final int GNOMEBALL_SCORE_GROUP_ID = InterfaceID.GNOMEBALL;
 	public static final int SANITY_GROUP_ID = InterfaceID.SANITY;
 	public static final int THE_STRANGLER_INFECTION_GROUP_ID = InterfaceID.DT2_INFECTION;
+
+	/**
+	 * OpenOSRS compatibility class for QuickPrayer widgets
+	 */
+	public static final class QuickPrayer
+	{
+		public static final int PRAYER_1 = PACK(QUICK_PRAYERS_GROUP_ID, 1);
+		public static final int PRAYER_2 = PACK(QUICK_PRAYERS_GROUP_ID, 2);
+		public static final int PRAYER_3 = PACK(QUICK_PRAYERS_GROUP_ID, 3);
+		public static final int PRAYER_4 = PACK(QUICK_PRAYERS_GROUP_ID, 4);
+		public static final int PRAYER_5 = PACK(QUICK_PRAYERS_GROUP_ID, 5);
+		public static final int PRAYER_6 = PACK(QUICK_PRAYERS_GROUP_ID, 6);
+		public static final int PRAYER_7 = PACK(QUICK_PRAYERS_GROUP_ID, 7);
+		public static final int PRAYER_8 = PACK(QUICK_PRAYERS_GROUP_ID, 8);
+		public static final int PRAYER_9 = PACK(QUICK_PRAYERS_GROUP_ID, 9);
+		public static final int PRAYER_10 = PACK(QUICK_PRAYERS_GROUP_ID, 10);
+		public static final int PRAYER_11 = PACK(QUICK_PRAYERS_GROUP_ID, 11);
+		public static final int PRAYER_12 = PACK(QUICK_PRAYERS_GROUP_ID, 12);
+		public static final int PRAYER_13 = PACK(QUICK_PRAYERS_GROUP_ID, 13);
+		public static final int PRAYER_14 = PACK(QUICK_PRAYERS_GROUP_ID, 14);
+		public static final int PRAYER_15 = PACK(QUICK_PRAYERS_GROUP_ID, 15);
+		public static final int PRAYER_16 = PACK(QUICK_PRAYERS_GROUP_ID, 16);
+		public static final int PRAYER_17 = PACK(QUICK_PRAYERS_GROUP_ID, 17);
+		public static final int PRAYER_18 = PACK(QUICK_PRAYERS_GROUP_ID, 18);
+		public static final int PRAYER_19 = PACK(QUICK_PRAYERS_GROUP_ID, 19);
+		public static final int PRAYER_20 = PACK(QUICK_PRAYERS_GROUP_ID, 20);
+		public static final int PRAYER_21 = PACK(QUICK_PRAYERS_GROUP_ID, 21);
+		public static final int PRAYER_22 = PACK(QUICK_PRAYERS_GROUP_ID, 22);
+		public static final int PRAYER_23 = PACK(QUICK_PRAYERS_GROUP_ID, 23);
+		public static final int PRAYER_24 = PACK(QUICK_PRAYERS_GROUP_ID, 24);
+		public static final int PRAYER_25 = PACK(QUICK_PRAYERS_GROUP_ID, 25);
+		public static final int PRAYER_26 = PACK(QUICK_PRAYERS_GROUP_ID, 26);
+		public static final int PRAYER_27 = PACK(QUICK_PRAYERS_GROUP_ID, 27);
+		public static final int PRAYER_28 = PACK(QUICK_PRAYERS_GROUP_ID, 28);
+		public static final int PRAYER_29 = PACK(QUICK_PRAYERS_GROUP_ID, 29);
+	}
+
+	/**
+	 * Packs the group and child IDs into a single integer.
+	 * @param groupId the group ID
+	 * @param childId the child ID
+	 * @return the packed ID
+	 */
+	public static int PACK(int groupId, int childId)
+	{
+		return groupId << 16 | childId;
+	}
 }

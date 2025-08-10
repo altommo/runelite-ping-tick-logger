@@ -110,4 +110,22 @@ public class MenuEntryAdded
 	{
 		return menuEntry.getItemId();
 	}
+
+	/**
+	 * OpenOSRS compatibility method
+	 * @return the menu action ID
+	 */
+	public int getMenuAction()
+	{
+		return getType();
+	}
+
+	/**
+	 * OpenOSRS compatibility method
+	 * @return true if force left click is enabled
+	 */
+	public boolean isForceLeftClick()
+	{
+		return false; // Stub implementation
+	}
 }

@@ -28,7 +28,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
-@Getter(onMethod_ = @Override)
+@Getter
 public enum FarmingBonus implements SkillBonus
 {
 	FARMERS_OUTFIT("Farmer's Outfit", 1.025f),

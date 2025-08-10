@@ -1840,4 +1840,10 @@ public final class SpriteID
 	public static final int HISCORE_YAMA = 6346;
 	/* Unmapped: 6347~6389 */
 	public static final int HISCORE_COLLECTIONS_LOGGED = 6390;
+
+	// OpenOSRS compatibility sprite constants
+	public static final int BIG_ASS_GREY_ENTANGLE = 6391; // Stub ID
+	public static final int BIG_ASS_GUTHIX_SPELL = 6392; // Stub ID
+	public static final int BIG_SPEC_TRANSFER = 6393; // Stub ID
+	public static final int BIG_SUPERHEAT = 6394; // Stub ID
 }

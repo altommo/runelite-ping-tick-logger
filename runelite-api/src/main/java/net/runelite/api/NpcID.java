@@ -6894,6 +6894,9 @@ public final class NpcID
 	public static final int JALTOKJAD_7704 = 7704;
 	public static final int YTHURKOT_7705 = 7705;
 	public static final int TZKALZUK = 7706;
+	// OpenOSRS compatibility constants
+	public static final int TZKAL_ZUK = TZKALZUK; // Alias for compatibility
+	public static final int VETION_REBORN = 6612; // Alias for Vet'ion reborn form
 	public static final int ANCESTRAL_GLYPH = 7707;
 	public static final int JALMEJJAK = 7708;
 	public static final int ROCKY_SUPPORT = 7709;

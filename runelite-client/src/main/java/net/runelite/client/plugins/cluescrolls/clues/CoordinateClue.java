@@ -1020,7 +1020,7 @@ public class CoordinateClue extends ClueScroll implements LocationClueScroll
 	private final Function<ClueScrollPlugin, String> directionsProvider;
 	@Nullable
 	private final Enemy enemy;
-	@Getter(onMethod_ = {@Varbit})
+	@Getter
 	private final int lightSourceVarbitId;
 	@Getter(AccessLevel.PRIVATE)
 	private final WorldPoint location;

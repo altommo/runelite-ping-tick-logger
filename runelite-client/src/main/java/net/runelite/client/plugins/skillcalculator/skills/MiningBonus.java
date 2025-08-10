@@ -28,7 +28,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
-@Getter(onMethod_ = @Override)
+@Getter
 public enum MiningBonus implements SkillBonus
 {
 	PROSPECTOR_KIT("Prospector Kit", 1.025f),

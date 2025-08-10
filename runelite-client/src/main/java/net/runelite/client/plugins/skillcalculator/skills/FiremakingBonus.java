@@ -30,7 +30,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
-@Getter(onMethod_ = @Override)
+@Getter
 public enum FiremakingBonus implements SkillBonus
 {
 	PYROMANCER_OUTFIT("Pyromancer Outfit", 1.025f),

@@ -28,7 +28,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
-@Getter(onMethod_ = @Override)
+@Getter
 public enum SmithingBonus implements SkillBonus
 {
 	GOLDSMITH_GAUNTLETS("Goldsmith Gauntlets", 2.5f),

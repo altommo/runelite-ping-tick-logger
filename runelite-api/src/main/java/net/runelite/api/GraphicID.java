@@ -65,4 +65,11 @@ public final class GraphicID
 	public static final int ZALCANO_PROJECTILE_FIREBALL = 1728;
 	public static final int CANNONBALL_OR = 2018;
 	public static final int GRANITE_CANNONBALL_OR = 2019;
+	// OpenOSRS compatibility constants based on GitHub findings
+	public static final int OLM_MAGE_ATTACK = 1337;
+	public static final int OLM_RANGE_ATTACK = 1338;
+	public static final int OLM_ACID_TRAIL = 1356;
+	public static final int OLM_BURN = 1339;
+	public static final int OLM_TELEPORT = 1340;
+	public static final int OLM_HEAL = 1341;
 }

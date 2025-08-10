@@ -40,4 +40,10 @@ public @interface ConfigSection
 	int position();
 
 	boolean closedByDefault() default false;
+	
+	String keyName() default "";
+	
+	boolean hidden() default false;
+	
+	String unhide() default "";
 }

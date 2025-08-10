@@ -30,7 +30,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
-@Getter(onMethod_ = @Override)
+@Getter
 public enum WoodcuttingBonus implements SkillBonus
 {
 	LUMBERJACK_OUTFIT("Lumberjack Outfit", 1.025f),

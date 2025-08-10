@@ -30,10 +30,16 @@ public interface PingLoggerConfig extends Config
     )
     String debugSection = "debug";
 
+    @ConfigSection(
+        name = "Mouse Coordinates",
+        description = "Settings for displaying mouse coordinates",
+        position = 3
+    )
+    String mouseCoordsSection = "mouseCoords";
+
     // === General Settings ===
     
     @ConfigItem(
-        keyName = "enabled",
         name = "Enable Plugin",
         description = "Enable or disable the entire plugin",
         section = generalSection
@@ -76,6 +82,17 @@ public interface PingLoggerConfig extends Config
     default boolean writeCombinedData()
     {
         return true;
+    }
+
+    @ConfigItem(
+        keyName = "writeActivePrayers",
+        name = "Write Active Prayers",
+        description = "Write active_prayers.txt with a list of active prayers",
+        section = monitoringSection
+    )
+    default boolean writeActivePrayers()
+    {
+        return false;
     }
 
     // === Debug Settings ===
@@ -122,5 +139,40 @@ public interface PingLoggerConfig extends Config
     default int logInterval()
     {
         return 50;
+    }
+
+    // === Mouse Coordinates ===
+
+    @ConfigItem(
+        keyName = "showMouseCoords",
+        name = "Show Mouse Coords",
+        description = "Displays an overlay with the current mouse coordinates",
+        section = mouseCoordsSection
+    )
+    default boolean showMouseCoords()
+    {
+        return false;
+    }
+
+    @ConfigItem(
+        keyName = "drawRectangle",
+        name = "Draw Rectangle",
+        description = "Allows drawing a rectangle on the screen to get its coordinates",
+        section = mouseCoordsSection
+    )
+    default boolean drawRectangle()
+    {
+        return false;
+    }
+
+    @ConfigItem(
+        keyName = "rectangleInstructions",
+        name = "How to use Draw Rectangle",
+        description = "Press and hold the mouse button to start drawing, and release to finish.",
+        section = mouseCoordsSection
+    )
+    default String rectangleInstructions()
+    {
+        return "";
     }
 }

@@ -44,7 +44,6 @@ public interface AgilityConfig extends Config
 	String sepulchreSection = "Hallowed Sepulchre";
 
 	@ConfigItem(
-		keyName = "showClickboxes",
 		name = "Show clickboxes",
 		description = "Show agility course and other obstacle clickboxes.",
 		position = 0

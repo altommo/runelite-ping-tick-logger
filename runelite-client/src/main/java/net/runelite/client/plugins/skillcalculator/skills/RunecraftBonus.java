@@ -28,7 +28,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
-@Getter(onMethod_ = @Override)
+@Getter
 public enum RunecraftBonus implements SkillBonus
 {
 	DAEYALT_ESSENCE("Daeyalt essence", 1.5f),

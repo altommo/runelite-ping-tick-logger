@@ -30,7 +30,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
-@Getter(onMethod_ = @Override)
+@Getter
 public enum AgilityBonus implements SkillBonus
 {
 	WILDERNESS_AGILITY_TICKET_11_TO_50("11-50 Wilderness Tickets", 1.05f),

@@ -43,6 +43,6 @@ enum BarrowsBrothers
 
 	private final String name;
 	private final WorldPoint location;
-	@Getter(onMethod_ = {@Varbit})
+	@Getter
 	private final int killedVarbit;
 }

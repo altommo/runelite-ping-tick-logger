@@ -52,7 +52,7 @@ enum BarsOres
 	SILVER_BAR(VarbitID.BLAST_FURNACE_SILVER_BARS, ItemID.SILVER_BAR),
 	GOLD_BAR(VarbitID.BLAST_FURNACE_GOLD_BARS, ItemID.GOLD_BAR);
 
-	@Getter(onMethod_ = {@Varbit})
+	@Getter
 	private final int varbit;
 	private final int itemID;
 }

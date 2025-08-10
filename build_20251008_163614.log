@@ -1,0 +1,72 @@
+[16:36:14.69] Starting Maven clean... 
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] RuneLite                                                           [pom]
+[INFO] Cache                                                              [jar]
+[INFO] RuneLite Maven Plugin                                     [maven-plugin]
+[INFO] RuneLite API                                                       [jar]
+[INFO] RuneLite JShell                                                    [jar]
+[INFO] RuneLite Client                                                    [jar]
+[INFO] 
+[INFO] --------------------< net.runelite:runelite-parent >--------------------
+[INFO] Building RuneLite 1.11.14-SNAPSHOT                                 [1/6]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ runelite-parent ---
+[INFO] 
+[INFO] -------------------------< net.runelite:cache >-------------------------
+[INFO] Building Cache 1.11.14-SNAPSHOT                                    [2/6]
+[INFO]   from cache\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ cache ---
+[INFO] Deleting C:\Users\hp\Development\runelite\cache\target
+[INFO] 
+[INFO] -----------------< net.runelite:runelite-maven-plugin >-----------------
+[INFO] Building RuneLite Maven Plugin 1.11.14-SNAPSHOT                    [3/6]
+[INFO]   from runelite-maven-plugin\pom.xml
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ runelite-maven-plugin ---
+[INFO] Deleting C:\Users\hp\Development\runelite\runelite-maven-plugin\target
+[INFO] 
+[INFO] ---------------------< net.runelite:runelite-api >----------------------
+[INFO] Building RuneLite API 1.11.14-SNAPSHOT                             [4/6]
+[INFO]   from runelite-api\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from runelite-plugins: https://repo.runelite.net/net/runelite/runelite-maven-plugin/1.11.14-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.0 kB                    Downloaded from runelite-plugins: https://repo.runelite.net/net/runelite/runelite-maven-plugin/1.11.14-SNAPSHOT/maven-metadata.xml (1.0 kB at 1.1 kB/s)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ runelite-api ---
+[INFO] 
+[INFO] ------------------------< net.runelite:jshell >-------------------------
+[INFO] Building RuneLite JShell 1.11.14-SNAPSHOT                          [5/6]
+[INFO]   from runelite-jshell\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ jshell ---
+[INFO] 
+[INFO] ------------------------< net.runelite:client >-------------------------
+[INFO] Building RuneLite Client 1.11.14-SNAPSHOT                          [6/6]
+[INFO]   from runelite-client\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ client ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for RuneLite 1.11.14-SNAPSHOT:
+[INFO] 
+[INFO] RuneLite ........................................... SUCCESS [  0.494 s]
+[INFO] Cache .............................................. SUCCESS [  0.232 s]
+[INFO] RuneLite Maven Plugin .............................. SUCCESS [  0.073 s]
+[INFO] RuneLite API ....................................... SUCCESS [  1.503 s]
+[INFO] RuneLite JShell .................................... SUCCESS [  0.003 s]
+[INFO] RuneLite Client .................................... SUCCESS [  0.054 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.875 s
+[INFO] Finished at: 2025-08-10T16:36:20+01:00
+[INFO] ------------------------------------------------------------------------

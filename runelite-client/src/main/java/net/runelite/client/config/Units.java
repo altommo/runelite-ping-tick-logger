@@ -38,10 +38,12 @@ import java.lang.annotation.Target;
 @Documented
 public @interface Units
 {
+	String GP = " gp";
 	String MILLISECONDS = "ms";
 	String MINUTES = " mins";
 	String PERCENT = "%";
 	String PIXELS = "px";
+	String POINTS = " pts";
 	String SECONDS = "s";
 	String TICKS = " ticks";
 
