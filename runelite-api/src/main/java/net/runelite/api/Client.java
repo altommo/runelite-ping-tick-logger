@@ -810,13 +810,9 @@ public interface Client extends OAuthApi, GameEngine
 	 */
 	String getVarcStrValue(@VarCStr int var);
 
-	/**
-	 * Sets a VarClientString to the passed value
-	 *
-	 * @param var the {@link net.runelite.api.gameval.VarClientID}
-	 * @param value the new value
-	 */
-	void setVar(int var1, String var2);
+       /** Backport shim for legacy plugins. */
+       @Deprecated
+       void setVar(int var1, String var2);
 
 	/**
 	 * Sets a VarClientInt to the passed value
@@ -2568,12 +2564,6 @@ public interface Client extends OAuthApi, GameEngine
 	{
 		return 0;
 	}
-	/**
-	 * Sets a var value
-	 * @param varIndex the var index
-	 * @param value the value to set
-	 */
-	void setVar(int varIndex, String value);
 
 	/**
 	 * Sets the menu option count

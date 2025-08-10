@@ -88,27 +88,19 @@ public class RuneLiteObject extends RuneLiteObjectController
 		this.baseModel = baseModel;
 	}
 
-	@Deprecated
-	public WorldView getWorldView()
-	{
-		return super.getWorldView();
-	}
+       /** Backport shim for legacy plugins. */
+       @Deprecated
+       public WorldView getWorldView()
+       {
+               return super.getWorldView();
+       }
 
-	@Deprecated
-	public void setZ(int z)
-	{
-		super.setZ(z);
-	}
-
-	public void setZ(int z)
-	{
-		super.setZ(z);
-	}
-
-	public WorldView getWorldView()
-	{
-		return super.getWorldView();
-	}
+       /** Backport shim for legacy plugins. */
+       @Deprecated
+       public void setZ(int z)
+       {
+               super.setZ(z);
+       }
 
 	/**
 	 * Sets the location in the scene for the RuneLiteObject
