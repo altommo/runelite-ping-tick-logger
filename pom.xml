@@ -117,6 +117,17 @@
 				<updatePolicy>always</updatePolicy>
 			</snapshots>
 		</pluginRepository>
+		<pluginRepository>
+			<id>openosrs-plugins</id>
+			<name>OpenOSRS Plugins</name>
+			<url>https://maven.openosrs.dev</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
 	</pluginRepositories>
 
 	<modules>
